@@ -43,7 +43,6 @@ test('Should render stations and click button "clear"', () => {
     expect(tbody.querySelectorAll('td')[0]).toHaveTextContent('station')
     expect(tbody.querySelectorAll('td')[1]).toHaveTextContent(0)
     expect(tbody.querySelectorAll('td')[2]).toHaveTextContent(10)
-    expect(tbody.querySelectorAll('td')[3]).toHaveTextContent('Sat Feb 27 2021')
 
     const button = container.querySelector('button')
     expect(button).toHaveTextContent('clear')
