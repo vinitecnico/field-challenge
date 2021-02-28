@@ -1,12 +1,14 @@
 @import "../../scss/variables.scss";
 
 .content {
-    background-color: $main-background-color;
-    border-radius: $default-border-radius;
-    padding: 0;
-    margin-bottom: 40px;
-
-    &.no-bg-color {
-        background-color: $background-color;
-    }
+  position: relative;
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 50px 30px 50px 30px;
+  background-color: #fff;
+  box-shadow: 0 7px 30px -6px;
+  z-index: 10;
+  border-radius: 6px;
+  margin-bottom: 30px;
 }
