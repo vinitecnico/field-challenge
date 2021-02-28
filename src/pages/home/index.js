@@ -69,7 +69,7 @@ const Home = () => {
         {!networks.loading ? (
           <>
             <Details networks={networks} handleClear={handleClear} />
-            {/* <Map networks={networks} handleClick={handleClick} /> */}
+            <Map networks={networks} handleClick={handleClick} />
           </>
         ) : (
           <div className="spinner-border" role="status">
