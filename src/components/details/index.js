@@ -7,6 +7,9 @@ const Details = ({ networks = {}, handleClear }) => {
       {!networks.select && (
         <h3 className="home-body-title">Select Networks:</h3>
       )}
+      {!networks.select && networks.data && networks.data && (
+        <p>network total: {networks.data.length}</p>
+      )}
       {networks.select && (
         <>
           <div>
@@ -14,7 +17,8 @@ const Details = ({ networks = {}, handleClear }) => {
               <div className="col-8">
                 <h3>
                   city: {networks.select.city} - stations:{" "}
-                  {networks.select.name}
+                  {networks.select.name} - Number of stations:{" "}
+                  {networks.select.stations.length}
                 </h3>
               </div>
               <div className="col-4">
@@ -45,7 +49,16 @@ const Details = ({ networks = {}, handleClear }) => {
                           <td>{name}</td>
                           <td>{empty_slots}</td>
                           <td>{free_bikes}</td>
-                          <td>{timestamp}</td>
+                          <td>
+                            {Intl.DateTimeFormat("pt-BR", {
+                              year: "numeric",
+                              month: "numeric",
+                              day: "numeric",
+                              hour: "numeric",
+                              minute: "numeric",
+                              second: "numeric",
+                            }).format(new Date(timestamp))}
+                          </td>
                         </tr>
                       )
                     )}
