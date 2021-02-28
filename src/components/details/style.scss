@@ -1,0 +1,14 @@
+button {
+  float: right;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}

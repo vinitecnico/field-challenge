@@ -1,0 +1,26 @@
+@import './scss/variables.scss';
+@import 'bootstrap/scss/bootstrap-grid.scss';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/spinners";
+
+body {
+  background-color: $background-color;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.App {
+  text-align: left;
+  width:100%;
+}
+
