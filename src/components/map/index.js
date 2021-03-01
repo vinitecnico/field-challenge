@@ -19,7 +19,7 @@ const MapWithAMarker = withScriptjs(
             lng: item.location.longitude,
           }}
           title={`${item.city ? `${item.city} - ` : ""}${item.name}`}
-          onClick={() => handleClick(item)}
+          onClick={() => !item.isDetails ? handleClick(item) : undefined}
         />
       ))}
     </GoogleMap>

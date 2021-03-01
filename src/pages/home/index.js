@@ -43,6 +43,7 @@ const Home = () => {
         location: { latitude, longitude },
         name: name,
         city,
+        isDetails: true
       };
     });
     setNetworks({
